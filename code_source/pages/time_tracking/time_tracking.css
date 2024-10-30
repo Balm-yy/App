@@ -1,0 +1,125 @@
+/*  MOBILE FIRST   */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --color-text-title : #ececec;
+    --color-text-subtitle: #808080;
+    --color-text-body: #ececec;
+    --color-bg: #1a1b1e;
+    --color-element: #25262b;
+    --color-active-element: #2c2d32;
+    --color-highlight: #a78bfa;
+    --color-icon-on: #ececec;
+    --color-icon-off: #404040;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Inter;
+    scrollbar-width: none;
+    background-color: #1a1b1e;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #1a1b1e;
+    color: var(--color-text-body);
+}
+
+
+
+/* TIME TRACKING HEADER */
+#time-tracking-header {
+    background-color: var(--color-highlight);
+    height: 85px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+
+
+/* CURRENT TASK TRACKING */
+#current-task-tracking {
+    background-color: var(--color-element);
+    width: 90%;
+    height: 255px;
+    border-radius: 10px;
+}
+#container-active {
+    background-color: var(--color-active-element);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#text-btn {
+    font-size: 14px;
+}
+#task-hour {
+    color: var(--color-highlight);
+    font-size: 12px;
+}
+
+
+#start-tracking {
+    background-color: var(--color-highlight);
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#tasks {
+    height: 90%;
+}
+
+
+
+
+/* RENCENTLY TRACKED */
+#recently-tracked-container {
+    background-color: var(--color-element);
+    width: 90%;
+    height: 255px;
+    border-radius: 10px;
+}
+.task-tracked {
+    width: 90%;
+    height: 35px;
+    background-color: var(--color-active-element);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#time-task-tracked {
+    font-size: 12px;
+    color: var(--color-highlight);
+}
+
+
+
+/* TRACK ANOTHER */
+#track-other {
+    width: 90%;
+    height: 35px;
+}
+#btn-track-other {
+    background-color: var(--color-highlight);
+    width: 70%;
+    height: 35px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#text-track-other-btn {
+    font-size: 14px;
+}

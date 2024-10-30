@@ -1,0 +1,56 @@
+
+:root {
+    --color-text-title : #ececec;
+    --color-text-subtitle: #808080;
+    --color-text-body: #ececec;
+    --color-bg: #1a1b1e;
+    --color-element: #25262b;
+    --color-active-element: #2c2d32;
+    --color-highlight: #a78bfa;
+    --color-icon-on: #ececec;
+    --color-icon-off: #404040;
+}
+
+
+/* HEADER */
+
+a {
+    text-decoration: none;
+    color: var(--color-text-title);
+}
+.empty-under-header {
+    height: 65px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-element);
+    height: 65px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#app-title {
+    color: var(--color-text-title);
+    font-size: 24px;
+    font-weight: 700;
+}
+#notifications {
+    height: 15px;
+    width: 15px;
+    background-color: var(--color-text-title);
+    border-radius: 50%;
+}
+#account {
+    background-color: var(--color-highlight);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+#profil-picture {
+    height: 25px;
+    width: 25px;
+    margin-left: -2px;
+}

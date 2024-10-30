@@ -1,0 +1,89 @@
+
+/*  MOBILE FIRST   */
+
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --color-text-title : #ececec;
+    --color-text-subtitle: #808080;
+    --color-text-body: #ececec;
+    --color-bg: #1a1b1e;
+    --color-element: #25262b;
+    --color-active-element: #2c2d32;
+    --color-highlight: #a78bfa;
+    --color-icon-on: #ececec;
+    --color-icon-off: #404040;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Inter;
+    scrollbar-width: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-text-body);
+}
+
+
+
+
+
+/* CALENDAR DAYS */
+.date-container {
+    width: 55px;
+    height: 70px;
+    background-color: var(--color-element);
+    border-radius: 15px;
+}
+
+.today {
+    background-color: var(--color-highlight);
+    color: var(--color-icon-off);
+    font-weight: 800;
+}
+
+
+/* CALENDAR EVENTS */
+#calendar-event-container {
+    width: 100%;
+}
+.event-container {
+    width: 90%
+}
+.notif {
+    background-color: var(--color-highlight);
+    width: 5px;
+    height: 23px;
+    border-radius: 50%;
+}
+.event-container {
+    width: 95%;
+    height: 120px;
+    margin: 0 auto;
+}
+.barre {
+    width: 7px; 
+    height: 80px;
+    background-color: var(--color-text-subtitle);
+    border-radius: 15px;
+}
+.event {
+    background-color: var(--color-element);
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+.event-hour {
+    color: var(--color-highlight)
+}

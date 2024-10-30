@@ -1,0 +1,40 @@
+:root {
+    --color-text-title : #ececec;
+    --color-text-subtitle: #808080;
+    --color-text-body: #ececec;
+    --color-bg: #1a1b1e;
+    --color-element: #25262b;
+    --color-active-element: #2c2d32;
+    --color-highlight: #a78bfa;
+    --color-icon-on: #ececec;
+    --color-icon-off: #404040;
+}
+
+.subtitle { 
+    color: var(--color-text-subtitle);
+    font-size: 10px;
+}
+.subtitle-finished {
+    color: var(--color-highlight);
+    font-size: 10px;
+}
+.title {
+    color: var(--color-text-body);
+    font-size: 20px;
+    font-weight: 600;
+}
+.second-title {
+    color: var(--color-text-body);
+    font-size: 16px;
+}
+.subtitle-header {
+    color: var(--color-icon-off);
+    font-size: 12px;
+    margin-top: -5px;
+}
+.page-header {
+    background-color: var(--color-highlight);
+    width: 100%;
+    height: 90px;
+}
+

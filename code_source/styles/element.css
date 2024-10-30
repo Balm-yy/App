@@ -1,0 +1,261 @@
+/*  MOBILE FIRST   */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --color-text-title : #ececec;
+    --color-text-subtitle: #808080;
+    --color-text-body: #ececec;
+    --color-bg: #1a1b1e;
+    --color-element: #25262b;
+    --color-active-element: #2c2d32;
+    --color-highlight: #a78bfa;
+    --color-icon-on: #ececec;
+    --color-icon-off: #404040;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Inter;
+    scrollbar-width: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--color-bg);
+    color: var(--color-text-body);
+}
+
+
+
+/* HEADER PAGE */
+.header-page-container {
+    width: 100%;
+    height: 90px;
+}
+.page-header {
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+}
+.page-number {
+    color: var(--color-highlight);
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+.page-number-text {
+    color: var(--color-highlight);
+    font-size: 20px;
+}
+
+
+
+
+.element {
+    width: 95%;
+    height: 110px;
+    background-color: var(--color-element);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.sous-element {
+    width: 90%;
+    height: 90px;
+    background-color: var(--color-element);
+    margin: 0 auto;
+    border-radius: 10px;;
+}
+
+
+
+
+
+
+/* TASK ELEMENT */
+.task-element {
+    background-color: var(--color-element);
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+
+
+.blank-bar-header {
+    width: 80%;
+    height: 10px;
+    background-color: var(--color-active-element);
+    border-radius: 15px;
+}
+.exp-bar-header {
+    width: 50%;
+    height: 10px;
+    background-color: var(--color-highlight);
+    border-radius: 15px;
+    margin-top: -18px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+
+
+
+
+.exp-bar {
+    width: 50%;
+    height: 10px;
+    background-color: var(--color-highlight);
+    border-radius: 15px;
+    margin-top: -10px;
+    margin-bottom: 8px;
+}
+.blank-bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-active-element);
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* CHAPTER CONTAINER */
+.chapter {
+    width: 50%;
+    height: 220px;
+    background-color: var(--color-element);
+    border-radius: 10px;
+}
+.chapter-off {
+    width: 50%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+#chapter-container {
+    width: 95%;
+}
+
+
+
+
+
+/* SQUARE ELEMENT */
+.square-element {
+    background-color: var(--color-element);
+    border-radius: 10px;
+    height: 90px;
+    width: 50%;
+}
+
+
+
+
+/* BIG ELEMENT */
+.big-element {
+    background-color: var(--color-element);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+
+/* ADD BTN */
+#add-btn {
+    background-color: var(--color-highlight);
+    font-size: 12px;
+    color: var(--color-element);
+}
+.add {
+    width: 30px;
+    height: 30px;
+    color: var(--color-icon-on);
+}
+
+
+
+
+
+
+
+/* CHECKBOX */
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+.custom-checkbox:checked {
+    background-color: #a78bfa;
+    border-color: var(--color-active-element);
+
+}
+/* Ajouter une coche lorsque cochée */
+.custom-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+/* change la couelur du etxte si case cochée */
+.custom-checkbox:checked + .task-text {
+    color: var(--color-icon-off);
+}
+
+
+
+.finished {
+    background-color: var(--color-highlight);
+}
+.completed {
+    background-color: var(--color-text-body);
+    width: 80%;
+}
+.finished-chapter {
+    background-color: var(--color-text-body);
+    width: 80%;
+}
+
+
+
+
+/* TASKS OPEN / HIDDEN */
+.hidden {
+    display: none;
+}
+
+
+.open {
+    display: block;
+}
